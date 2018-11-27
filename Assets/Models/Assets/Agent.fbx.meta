@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: df0c7d478ce067f43bbb8026148fca64
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Aperature_Control
+    100004: Aperature_Control_Orientation
+    100006: Aperature_Control_Orientation 1
+    100008: Body
+    100010: Eye_Stalk
+    100012: Eye_Stalk 1
+    100014: Eyeparts
+    100016: Eyeparts 1
+    100018: Head
+    100020: ikHandle1
+    100022: ikHandle1 1
+    100024: joint1
+    100026: joint1 1
+    100028: L_Arm
+    100030: L_Eye
+    100032: Look_Control
+    100034: Look_Control_Orientation
+    100036: Look_Control_Orientation 1
+    100038: R_Arm
+    100040: R_Eye
+    100042: Robot_Eye_v2:Aperature_Blade1
+    100044: Robot_Eye_v2:Aperature_Blade1 1
+    100046: Robot_Eye_v2:Aperature_Blade1 2
+    100048: Robot_Eye_v2:Aperature_Blade1 3
+    100050: Robot_Eye_v2:Aperature_Blade1 4
+    100052: Robot_Eye_v2:Aperature_Blade1 5
+    100054: Robot_Eye_v2:Aperature_Blade1 6
+    100056: Robot_Eye_v2:Aperature_Blade1 7
+    100058: Robot_Eye_v2:Aperature_Center
+    100060: Robot_Eye_v2:Aperature_Center1
+    100062: Robot_Eye_v2:Aperature_Center2
+    100064: Robot_Eye_v2:Aperature_Center3
+    100066: Robot_Eye_v2:Aperature_Center4
+    100068: Robot_Eye_v2:Aperature_Center5
+    100070: Robot_Eye_v2:Aperature_Center6
+    100072: Robot_Eye_v2:Aperature_Center7
+    100074: Robot_Eye_v2:Aperature_Control
+    100076: Robot_Eye_v2:Eye_Cornea
+    100078: Robot_Eye_v2:Eye_Retina
+    100080: Robot_Eye_v2:Eye_Sclera
+    100082: Robot_Eye_v2:Eye_Spcket
+    100084: Robot_Eye_v2:Eyebrow
+    100086: Robot_Eye_v2:joint2
+    100088: Robot_Eye_v2:Look_Control
+    100090: Robot_Eye_v2:polySurface1
+    100092: Robot_Eye_v2:transform1
+    100094: Robot_Eye_v3:Aperature_Blade1
+    100096: Robot_Eye_v3:Aperature_Blade1 1
+    100098: Robot_Eye_v3:Aperature_Blade1 2
+    100100: Robot_Eye_v3:Aperature_Blade1 3
+    100102: Robot_Eye_v3:Aperature_Blade1 4
+    100104: Robot_Eye_v3:Aperature_Blade1 5
+    100106: Robot_Eye_v3:Aperature_Blade1 6
+    100108: Robot_Eye_v3:Aperature_Blade1 7
+    100110: Robot_Eye_v3:Aperature_Center
+    100112: Robot_Eye_v3:Aperature_Center1
+    100114: Robot_Eye_v3:Aperature_Center2
+    100116: Robot_Eye_v3:Aperature_Center3
+    100118: Robot_Eye_v3:Aperature_Center4
+    100120: Robot_Eye_v3:Aperature_Center5
+    100122: Robot_Eye_v3:Aperature_Center6
+    100124: Robot_Eye_v3:Aperature_Center7
+    100126: Robot_Eye_v3:Eye_Cornea
+    100128: Robot_Eye_v3:Eye_Retina
+    100130: Robot_Eye_v3:Eye_Sclera
+    100132: Robot_Eye_v3:Eye_Spcket
+    100134: Robot_Eye_v3:Eyebrow
+    100136: Robot_Eye_v3:joint2
+    100138: Robot_Eye_v3:polySurface1
+    100140: Robot_Eye_v3:transform1
+    400000: //RootNode
+    400002: Aperature_Control
+    400004: Aperature_Control_Orientation
+    400006: Aperature_Control_Orientation 1
+    400008: Body
+    400010: Eye_Stalk
+    400012: Eye_Stalk 1
+    400014: Eyeparts
+    400016: Eyeparts 1
+    400018: Head
+    400020: ikHandle1
+    400022: ikHandle1 1
+    400024: joint1
+    400026: joint1 1
+    400028: L_Arm
+    400030: L_Eye
+    400032: Look_Control
+    400034: Look_Control_Orientation
+    400036: Look_Control_Orientation 1
+    400038: R_Arm
+    400040: R_Eye
+    400042: Robot_Eye_v2:Aperature_Blade1
+    400044: Robot_Eye_v2:Aperature_Blade1 1
+    400046: Robot_Eye_v2:Aperature_Blade1 2
+    400048: Robot_Eye_v2:Aperature_Blade1 3
+    400050: Robot_Eye_v2:Aperature_Blade1 4
+    400052: Robot_Eye_v2:Aperature_Blade1 5
+    400054: Robot_Eye_v2:Aperature_Blade1 6
+    400056: Robot_Eye_v2:Aperature_Blade1 7
+    400058: Robot_Eye_v2:Aperature_Center
+    400060: Robot_Eye_v2:Aperature_Center1
+    400062: Robot_Eye_v2:Aperature_Center2
+    400064: Robot_Eye_v2:Aperature_Center3
+    400066: Robot_Eye_v2:Aperature_Center4
+    400068: Robot_Eye_v2:Aperature_Center5
+    400070: Robot_Eye_v2:Aperature_Center6
+    400072: Robot_Eye_v2:Aperature_Center7
+    400074: Robot_Eye_v2:Aperature_Control
+    400076: Robot_Eye_v2:Eye_Cornea
+    400078: Robot_Eye_v2:Eye_Retina
+    400080: Robot_Eye_v2:Eye_Sclera
+    400082: Robot_Eye_v2:Eye_Spcket
+    400084: Robot_Eye_v2:Eyebrow
+    400086: Robot_Eye_v2:joint2
+    400088: Robot_Eye_v2:Look_Control
+    400090: Robot_Eye_v2:polySurface1
+    400092: Robot_Eye_v2:transform1
+    400094: Robot_Eye_v3:Aperature_Blade1
+    400096: Robot_Eye_v3:Aperature_Blade1 1
+    400098: Robot_Eye_v3:Aperature_Blade1 2
+    400100: Robot_Eye_v3:Aperature_Blade1 3
+    400102: Robot_Eye_v3:Aperature_Blade1 4
+    400104: Robot_Eye_v3:Aperature_Blade1 5
+    400106: Robot_Eye_v3:Aperature_Blade1 6
+    400108: Robot_Eye_v3:Aperature_Blade1 7
+    400110: Robot_Eye_v3:Aperature_Center
+    400112: Robot_Eye_v3:Aperature_Center1
+    400114: Robot_Eye_v3:Aperature_Center2
+    400116: Robot_Eye_v3:Aperature_Center3
+    400118: Robot_Eye_v3:Aperature_Center4
+    400120: Robot_Eye_v3:Aperature_Center5
+    400122: Robot_Eye_v3:Aperature_Center6
+    400124: Robot_Eye_v3:Aperature_Center7
+    400126: Robot_Eye_v3:Eye_Cornea
+    400128: Robot_Eye_v3:Eye_Retina
+    400130: Robot_Eye_v3:Eye_Sclera
+    400132: Robot_Eye_v3:Eye_Spcket
+    400134: Robot_Eye_v3:Eyebrow
+    400136: Robot_Eye_v3:joint2
+    400138: Robot_Eye_v3:polySurface1
+    400140: Robot_Eye_v3:transform1
+    2100000: AgentBody
+    2100002: Robot_Head
+    2100004: Robot_Eye_v2_Eye_Outer_Cornea_Mat
+    2100006: Robot_Eye_v2_Eye_Inner_Cornea_Mat
+    2100008: lambert1
+    2100010: Robot_Eye_v2_blinn1
+    2100012: Eyebrow_Mat
+    2100014: Robot_Eye_v3_Eye_Outer_Cornea_Mat
+    2100016: Robot_Eye_v3_Eye_Inner_Cornea_Mat
+    2100018: Robot_Eye_v3_blinn1
+    2300000: Body
+    2300002: Eye_Stalk
+    2300004: Eye_Stalk 1
+    2300006: Head
+    2300008: L_Arm
+    2300010: R_Arm
+    2300012: Robot_Eye_v2:Aperature_Blade1
+    2300014: Robot_Eye_v2:Aperature_Blade1 1
+    2300016: Robot_Eye_v2:Aperature_Blade1 2
+    2300018: Robot_Eye_v2:Aperature_Blade1 3
+    2300020: Robot_Eye_v2:Aperature_Blade1 4
+    2300022: Robot_Eye_v2:Aperature_Blade1 5
+    2300024: Robot_Eye_v2:Aperature_Blade1 6
+    2300026: Robot_Eye_v2:Aperature_Blade1 7
+    2300028: Robot_Eye_v2:Eye_Cornea
+    2300030: Robot_Eye_v2:Eye_Retina
+    2300032: Robot_Eye_v2:Eye_Sclera
+    2300034: Robot_Eye_v2:Eyebrow
+    2300036: Robot_Eye_v2:polySurface1
+    2300038: Robot_Eye_v3:Aperature_Blade1
+    2300040: Robot_Eye_v3:Aperature_Blade1 1
+    2300042: Robot_Eye_v3:Aperature_Blade1 2
+    2300044: Robot_Eye_v3:Aperature_Blade1 3
+    2300046: Robot_Eye_v3:Aperature_Blade1 4
+    2300048: Robot_Eye_v3:Aperature_Blade1 5
+    2300050: Robot_Eye_v3:Aperature_Blade1 6
+    2300052: Robot_Eye_v3:Aperature_Blade1 7
+    2300054: Robot_Eye_v3:Eye_Cornea
+    2300056: Robot_Eye_v3:Eye_Retina
+    2300058: Robot_Eye_v3:Eye_Sclera
+    2300060: Robot_Eye_v3:Eyebrow
+    2300062: Robot_Eye_v3:polySurface1
+    3300000: Body
+    3300002: Eye_Stalk
+    3300004: Eye_Stalk 1
+    3300006: Head
+    3300008: L_Arm
+    3300010: R_Arm
+    3300012: Robot_Eye_v2:Aperature_Blade1
+    3300014: Robot_Eye_v2:Aperature_Blade1 1
+    3300016: Robot_Eye_v2:Aperature_Blade1 2
+    3300018: Robot_Eye_v2:Aperature_Blade1 3
+    3300020: Robot_Eye_v2:Aperature_Blade1 4
+    3300022: Robot_Eye_v2:Aperature_Blade1 5
+    3300024: Robot_Eye_v2:Aperature_Blade1 6
+    3300026: Robot_Eye_v2:Aperature_Blade1 7
+    3300028: Robot_Eye_v2:Eye_Cornea
+    3300030: Robot_Eye_v2:Eye_Retina
+    3300032: Robot_Eye_v2:Eye_Sclera
+    3300034: Robot_Eye_v2:Eyebrow
+    3300036: Robot_Eye_v2:polySurface1
+    3300038: Robot_Eye_v3:Aperature_Blade1
+    3300040: Robot_Eye_v3:Aperature_Blade1 1
+    3300042: Robot_Eye_v3:Aperature_Blade1 2
+    3300044: Robot_Eye_v3:Aperature_Blade1 3
+    3300046: Robot_Eye_v3:Aperature_Blade1 4
+    3300048: Robot_Eye_v3:Aperature_Blade1 5
+    3300050: Robot_Eye_v3:Aperature_Blade1 6
+    3300052: Robot_Eye_v3:Aperature_Blade1 7
+    3300054: Robot_Eye_v3:Eye_Cornea
+    3300056: Robot_Eye_v3:Eye_Retina
+    3300058: Robot_Eye_v3:Eye_Sclera
+    3300060: Robot_Eye_v3:Eyebrow
+    3300062: Robot_Eye_v3:polySurface1
+    4300000: Body
+    4300002: R_Arm
+    4300004: L_Arm
+    4300006: Head
+    4300008: Eye_Stalk
+    4300010: Robot_Eye_v2:polySurface1
+    4300012: Robot_Eye_v2:Eye_Sclera
+    4300014: Robot_Eye_v2:Eye_Retina
+    4300016: Robot_Eye_v2:Aperature_Blade1
+    4300018: Robot_Eye_v2:Aperature_Blade1
+    4300020: Robot_Eye_v2:Aperature_Blade1
+    4300022: Robot_Eye_v2:Aperature_Blade1
+    4300024: Robot_Eye_v2:Aperature_Blade1
+    4300026: Robot_Eye_v2:Aperature_Blade1
+    4300028: Robot_Eye_v2:Aperature_Blade1
+    4300030: Robot_Eye_v2:Aperature_Blade1
+    4300032: Robot_Eye_v2:Eye_Cornea
+    4300034: Robot_Eye_v2:Eyebrow
+    4300036: Eye_Stalk
+    4300038: Robot_Eye_v3:polySurface1
+    4300040: Robot_Eye_v3:Eye_Sclera
+    4300042: Robot_Eye_v3:Eye_Retina
+    4300044: Robot_Eye_v3:Aperature_Blade1
+    4300046: Robot_Eye_v3:Aperature_Blade1
+    4300048: Robot_Eye_v3:Aperature_Blade1
+    4300050: Robot_Eye_v3:Aperature_Blade1
+    4300052: Robot_Eye_v3:Aperature_Blade1
+    4300054: Robot_Eye_v3:Aperature_Blade1
+    4300056: Robot_Eye_v3:Aperature_Blade1
+    4300058: Robot_Eye_v3:Aperature_Blade1
+    4300060: Robot_Eye_v3:Eye_Cornea
+    4300062: Robot_Eye_v3:Eyebrow
+    6400000: Body
+    6400002: Eye_Stalk
+    6400004: Eye_Stalk 1
+    6400006: Head
+    6400008: L_Arm
+    6400010: R_Arm
+    6400012: Robot_Eye_v2:Aperature_Blade1
+    6400014: Robot_Eye_v2:Aperature_Blade1 1
+    6400016: Robot_Eye_v2:Aperature_Blade1 2
+    6400018: Robot_Eye_v2:Aperature_Blade1 3
+    6400020: Robot_Eye_v2:Aperature_Blade1 4
+    6400022: Robot_Eye_v2:Aperature_Blade1 5
+    6400024: Robot_Eye_v2:Aperature_Blade1 6
+    6400026: Robot_Eye_v2:Aperature_Blade1 7
+    6400028: Robot_Eye_v2:Eye_Cornea
+    6400030: Robot_Eye_v2:Eye_Retina
+    6400032: Robot_Eye_v2:Eye_Sclera
+    6400034: Robot_Eye_v2:Eyebrow
+    6400036: Robot_Eye_v2:polySurface1
+    6400038: Robot_Eye_v3:Aperature_Blade1
+    6400040: Robot_Eye_v3:Aperature_Blade1 1
+    6400042: Robot_Eye_v3:Aperature_Blade1 2
+    6400044: Robot_Eye_v3:Aperature_Blade1 3
+    6400046: Robot_Eye_v3:Aperature_Blade1 4
+    6400048: Robot_Eye_v3:Aperature_Blade1 5
+    6400050: Robot_Eye_v3:Aperature_Blade1 6
+    6400052: Robot_Eye_v3:Aperature_Blade1 7
+    6400054: Robot_Eye_v3:Eye_Cornea
+    6400056: Robot_Eye_v3:Eye_Retina
+    6400058: Robot_Eye_v3:Eye_Sclera
+    6400060: Robot_Eye_v3:Eyebrow
+    6400062: Robot_Eye_v3:polySurface1
+    7400000: TalkingLong
+    7400002: TalkingMedium
+    7400004: TalkingShort
+    7400006: Dab
+    7400008: Idle
+    7400010: ToSleep
+    7400012: Sleep
+    7400014: Moving
+    7400016: FlyUp
+    7400018: FlySpin
+    7400020: Waving
+    7400022: WakeUp
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TalkingLong
+      takeName: Take 001
+      firstFrame: 720
+      lastFrame: 899
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TalkingMedium
+      takeName: Take 001
+      firstFrame: 900
+      lastFrame: 1019
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TalkingShort
+      takeName: Take 001
+      firstFrame: 1020
+      lastFrame: 1079
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dab
+      takeName: Take 001
+      firstFrame: 1080
+      lastFrame: 1259
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 118
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ToSleep
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sleep
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 238
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Moving
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 358
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FlyUp
+      takeName: Take 001
+      firstFrame: 360
+      lastFrame: 419
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FlySpin
+      takeName: Take 001
+      firstFrame: 420
+      lastFrame: 478
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Waving
+      takeName: Take 001
+      firstFrame: 480
+      lastFrame: 659
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WakeUp
+      takeName: Take 001
+      firstFrame: 660
+      lastFrame: 719
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.2
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
