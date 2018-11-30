@@ -31,7 +31,7 @@ public class MoveTo : MonoBehaviour
     Animator anim;
     Vector3 defaultPos, targetPos;
     Quaternion defaultQuart;
-    string[] randomAnimArray = { "Waving", "Dab", "ToSleep" }; // Idle animation state names in Agentcontroller.
+    string[] randomAnimArray = { "Waving", "ToSleep" }; // Idle animation state names in Agentcontroller.
     string[] talkingAnimArray = { "GoToShort", "GoToMedium", "GoToLong" }; // Talking animation state names in Agentcontroller.
     float currentDistance, angle, step;
     bool randomAnimNumAssigned = false, defaultCheck = true;
