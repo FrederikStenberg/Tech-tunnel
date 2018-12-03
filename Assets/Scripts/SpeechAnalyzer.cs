@@ -23,7 +23,7 @@ public class SpeechAnalyzer : MonoBehaviour {
 
     AudioSource agentSpeech;
 
-    private void Start()
+    private void Awake()
     {
         renderer = GetComponent<Renderer>();
         renderer.enabled = true;
@@ -33,6 +33,7 @@ public class SpeechAnalyzer : MonoBehaviour {
             currentMouth = noSmileSilent;
         else
             currentMouth = smileSilent;
+        renderer.sharedMaterial = currentMouth;
     }
 	
 	// Update is called once per frame
