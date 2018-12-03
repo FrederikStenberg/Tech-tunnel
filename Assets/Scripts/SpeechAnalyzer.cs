@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class SpeechAnalyzer : MonoBehaviour {
 
-    public Material mouthSilent;
-    public Material mouthSpeaking;
+    public Material smileSilent;
+    public Material smileSpeaking;
+    public Material noSmileSilent;
+    public Material noSmileSpeaking;
     public int sampleDataLength = 2048;
 
     Material currentMouth;
@@ -17,20 +19,25 @@ public class SpeechAnalyzer : MonoBehaviour {
     float clipLoudness;
     float[] clipSampleData;
 
+    public MoveTo agentScript;
+
     AudioSource agentSpeech;
 
-    private void Awake()
+    private void Start()
     {
-        currentMouth = mouthSilent;
         renderer = GetComponent<Renderer>();
         renderer.enabled = true;
         agentSpeech = GetComponent<AudioSource>();
-
         clipSampleData = new float[sampleDataLength];
+        if (agentScript.lookAwayOffsetEnabled)
+            currentMouth = noSmileSilent;
+        else
+            currentMouth = smileSilent;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log(currentMouth);
         if (GetComponent<AudioSource>().isPlaying)
         {
             currentUpdateTime += Time.deltaTime;
@@ -42,21 +49,34 @@ public class SpeechAnalyzer : MonoBehaviour {
                 foreach (var sample in clipSampleData)
                 {
                     clipLoudness += Mathf.Abs(sample);
-                }
-                //Debug.Log(clipLoudness);     
+                }  
             }
 
-            if (clipLoudness < 1 && currentMouth != mouthSilent)
+            if (agentScript.lookAwayOffsetEnabled)
             {
-                //Debug.Log("Im silent");
-                renderer.sharedMaterial = mouthSilent;
-                currentMouth = mouthSilent;
+                if (clipLoudness < 1 && currentMouth != noSmileSilent)
+                {
+                    renderer.sharedMaterial = noSmileSilent;
+                    currentMouth = noSmileSilent;
+                }
+                else if (clipLoudness > 1 && currentMouth != noSmileSpeaking)
+                {
+                    renderer.sharedMaterial = noSmileSpeaking;
+                    currentMouth = noSmileSpeaking;
+                }
             }
-            else if (clipLoudness > 1 && currentMouth != mouthSpeaking)
+            else
             {
-                //Debug.Log("Im speaking");
-                renderer.sharedMaterial = mouthSpeaking;
-                currentMouth = mouthSpeaking;
+                if (clipLoudness < 1 && currentMouth != smileSilent)
+                {
+                    renderer.sharedMaterial = smileSilent;
+                    currentMouth = smileSilent;
+                }
+                else if (clipLoudness > 1 && currentMouth != smileSpeaking)
+                {
+                    renderer.sharedMaterial = smileSpeaking;
+                    currentMouth = smileSpeaking;
+                }
             }
         }
 	}

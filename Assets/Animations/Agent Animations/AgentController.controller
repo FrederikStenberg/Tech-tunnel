@@ -875,7 +875,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ToFlying
-  m_Speed: 0.5
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101853464647878022}
@@ -1007,7 +1007,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FromFlying
-  m_Speed: -0.5
+  m_Speed: -1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101720335612390932}

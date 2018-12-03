@@ -11,8 +11,9 @@ public class MoveTo : MonoBehaviour
     public AudioClip[] locationClips; // Audio clips for different destinations
     public GameObject ui, map;
 
-    public Vector3 defaultRot, targetOffset = new Vector3(0, 5, 0);
+    public Vector3 defaultRot, targetOffset = new Vector3(0, 5, 0), lookAwayOffset;
     public float speed;
+    public bool lookAwayOffsetEnabled = false;
 
     // Temporary public inspector variables, should be Private/hidden
     public string agentState = "Idle"; // Remove = "Idle"; when done with testing animations
@@ -31,6 +32,7 @@ public class MoveTo : MonoBehaviour
     Animator anim;
     Vector3 defaultPos, targetPos;
     Quaternion defaultQuart;
+    GameObject camOffset;
     string[] randomAnimArray = { "Waving", "ToSleep" }; // Idle animation state names in Agentcontroller.
     string[] talkingAnimArray = { "GoToShort", "GoToMedium", "GoToLong" }; // Talking animation state names in Agentcontroller.
     float currentDistance, angle, step;
@@ -39,11 +41,15 @@ public class MoveTo : MonoBehaviour
 
     void Start()
     {
-        agentState = "Idle";
         anim = GetComponentInChildren<Animator>();
+        camOffset = GameObject.FindGameObjectWithTag("CameraOffset");
+        agentState = "Idle";
         defaultPos = transform.position;
-        defaultRot = transform.eulerAngles;
         defaultQuart = transform.rotation;
+        if (!lookAwayOffsetEnabled)
+            camOffset.transform.localPosition = new Vector3(0, 0, 0);
+        defaultRot = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
+
     }
 
     void Update()
@@ -51,8 +57,7 @@ public class MoveTo : MonoBehaviour
         // Update debuggers
 
         // --------------------------------------------------- //
-
-
+        
         if (moving)
         {
             Move();
@@ -64,6 +69,8 @@ public class MoveTo : MonoBehaviour
             {
                 ClickOnLocation();
             }
+            if (transform.position == defaultPos)
+                transform.LookAt(camOffset.transform);
         }
 
         // When return button is clicked, but agent is not at default position
@@ -139,6 +146,19 @@ public class MoveTo : MonoBehaviour
         }
     }
 
+    void lookAtCameraOffset(bool boolean)
+    {
+        if (boolean)
+        {
+
+        }
+        else
+        {
+
+        }
+
+    }
+
     //Move function - moves towards clicked object
     void Move()
     {
@@ -196,13 +216,17 @@ public class MoveTo : MonoBehaviour
                             GetComponentInChildren<AudioSource>().clip = locationClips[6];
                             GetComponentInChildren<AudioSource>().Play();
                             break;
+                        case "Rønne":
+                            GetComponentInChildren<AudioSource>().clip = locationClips[7];
+                            GetComponentInChildren<AudioSource>().Play();
+                            break;
                     }
                 }
             }
         }
         else
         {
-            transform.LookAt(cam.transform);
+            transform.LookAt(camOffset.transform);
             cam.LookAtAgent();
             ui.SetActive(true);
         }
@@ -279,7 +303,7 @@ public class MoveTo : MonoBehaviour
         {
             if (animationName == "Random" || animationName == "random" || animationName == "RANDOM")
             {
-                int r = UnityEngine.Random.Range(0, 3);
+                int r = UnityEngine.Random.Range(0, 2);
                 anim.Play(randomAnimArray[r]);
             }
             else

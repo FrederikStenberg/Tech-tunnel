@@ -87,6 +87,10 @@ public class CameraController : MonoBehaviour {
                     GetComponent<AudioSource>().clip = locationClips[6];
                     GetComponent<AudioSource>().Play();
                     break;
+                case "Rønne":
+                    GetComponent<AudioSource>().clip = locationClips[7];
+                    GetComponent<AudioSource>().Play();
+                    break;
             }
             playArrivedAudioOnce = true;
         }
