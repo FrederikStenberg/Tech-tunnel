@@ -2564,7 +2564,7 @@ Prefab:
         type: 2}
       propertyPath: locationClips.Array.data[7]
       value: 
-      objectReference: {fileID: 8300000, guid: a7286d73c2b98ad4aacde260445fbd9f, type: 3}
+      objectReference: {fileID: 8300000, guid: 76535ac5ef601e9498a1badd844c7811, type: 3}
     - target: {fileID: 198739456365682044, guid: 359db56fd22310d4cad7376d74586db7,
         type: 2}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -28343,7 +28343,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ca8d9dd001bc0634ba75031324aa767f, type: 3}
   - {fileID: 8300000, guid: f7a4f73eb48f1aa4f90835164f14c4a6, type: 3}
   - {fileID: 8300000, guid: f33a9747ccca8a242bec4c3718df9861, type: 3}
-  - {fileID: 8300000, guid: 3e64e49116323f64fa5b58f1ac593c79, type: 3}
+  - {fileID: 8300000, guid: 7fc77ecc4ef68ab4fb17acf232d15f98, type: 3}
   camOffset: {x: 0, y: 8, z: -5}
   mapOffset: {x: 0, y: 0, z: -10}
   speed: 1.5
