@@ -146,7 +146,6 @@ public class MoveTo : MonoBehaviour
                     // the clickable tag respectively - and include a collider on the clickable object (parent).
                     lookAtPos = hit.collider.gameObject.transform.GetChild(0).gameObject.transform.position;
                     targetPos = hit.collider.gameObject.transform.GetChild(1).gameObject.transform.position;
-                    Debug.Log("Raycast hit clickable object.");
 
                     moving = true;
                     checkingDistance = true;
@@ -183,8 +182,7 @@ public class MoveTo : MonoBehaviour
                 {
                     anim.SetTrigger("Arrived");
                     arrived = true; // Agent arrived at destination
-
-                    Debug.Log("Audio source");
+                    
                     //Enable desired sound-clip depending on location
                     switch (clickedLocation)
                     {
