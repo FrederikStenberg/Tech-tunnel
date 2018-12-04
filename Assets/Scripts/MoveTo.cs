@@ -28,15 +28,17 @@ public class MoveTo : MonoBehaviour
     [HideInInspector] // String
     public string clickedLocation = "default";
 
+    [HideInInspector] // Animator
+    public Animator anim;
+
     // Private variables
-    Animator anim;
     Vector3 defaultPos, targetPos;
     Quaternion defaultQuart;
     GameObject camOffset;
     string[] randomAnimArray = { "Waving", "ToSleep" }; // Idle animation state names in Agentcontroller.
     string[] talkingAnimArray = { "GoToShort", "GoToMedium", "GoToLong" }; // Talking animation state names in Agentcontroller.
     float currentDistance, angle, step;
-    bool randomAnimNumAssigned = false, defaultCheck = true;
+    bool randomAnimNumAssigned = false, defaultCheck = true, firstAnim = true;
 
 
     void Start()
@@ -57,7 +59,7 @@ public class MoveTo : MonoBehaviour
         // Update debuggers
 
         // --------------------------------------------------- //
-        
+
         if (moving)
         {
             Move();
@@ -82,9 +84,19 @@ public class MoveTo : MonoBehaviour
         // Random animations when idle  
         if (!randomAnimNumAssigned && !moving && defaultCheck)
         {
-            sec_toRandomAnim = UnityEngine.Random.Range(5.0f, 10.0f);
-            StartCoroutine(animEvents());
-            randomAnimNumAssigned = true;
+            if (!firstAnim)
+            {
+                sec_toRandomAnim = UnityEngine.Random.Range(5.0f, 10.0f);
+                StartCoroutine(animEvents("Random"));
+                randomAnimNumAssigned = true;
+            }
+            else
+            {
+                sec_toRandomAnim = UnityEngine.Random.Range(2.0f, 4.0f);
+                StartCoroutine(animEvents("Waving"));
+                randomAnimNumAssigned = true;
+                firstAnim = false;
+            }
         }
 
         // Animations when talking
@@ -146,19 +158,6 @@ public class MoveTo : MonoBehaviour
         }
     }
 
-    void lookAtCameraOffset(bool boolean)
-    {
-        if (boolean)
-        {
-
-        }
-        else
-        {
-
-        }
-
-    }
-
     //Move function - moves towards clicked object
     void Move()
     {
@@ -185,6 +184,7 @@ public class MoveTo : MonoBehaviour
                     anim.SetTrigger("Arrived");
                     arrived = true; // Agent arrived at destination
 
+                    Debug.Log("Audio source");
                     //Enable desired sound-clip depending on location
                     switch (clickedLocation)
                     {
@@ -311,14 +311,14 @@ public class MoveTo : MonoBehaviour
         }
     }
 
-    IEnumerator animEvents()
+    IEnumerator animEvents(string animationName)
     {
         yield return new WaitForSeconds(sec_toRandomAnim);
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("StateController.Idle") && !GetComponentInChildren<AudioSource>().isPlaying)
         {
-            randomAnimationsTable("Random");
-            randomAnimNumAssigned = false;
+            randomAnimationsTable(animationName);
         }
+        randomAnimNumAssigned = false;
         yield break;
     }
 }

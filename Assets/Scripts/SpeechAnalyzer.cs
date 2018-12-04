@@ -9,6 +9,7 @@ public class SpeechAnalyzer : MonoBehaviour {
     public Material noSmileSilent;
     public Material noSmileSpeaking;
     public int sampleDataLength = 2048;
+    public float speakingFrequencyAdjuster;
 
     Material currentMouth;
     Renderer renderer;
@@ -38,7 +39,6 @@ public class SpeechAnalyzer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(currentMouth);
         if (GetComponent<AudioSource>().isPlaying)
         {
             currentUpdateTime += Time.deltaTime;
@@ -55,12 +55,12 @@ public class SpeechAnalyzer : MonoBehaviour {
 
             if (agentScript.lookAwayOffsetEnabled)
             {
-                if (clipLoudness < 1 && currentMouth != noSmileSilent)
+                if (clipLoudness <= speakingFrequencyAdjuster && currentMouth != noSmileSilent)
                 {
                     renderer.sharedMaterial = noSmileSilent;
                     currentMouth = noSmileSilent;
                 }
-                else if (clipLoudness > 1 && currentMouth != noSmileSpeaking)
+                else if (clipLoudness > speakingFrequencyAdjuster && currentMouth != noSmileSpeaking)
                 {
                     renderer.sharedMaterial = noSmileSpeaking;
                     currentMouth = noSmileSpeaking;
@@ -68,12 +68,12 @@ public class SpeechAnalyzer : MonoBehaviour {
             }
             else
             {
-                if (clipLoudness < 1 && currentMouth != smileSilent)
+                if (clipLoudness <= speakingFrequencyAdjuster && currentMouth != smileSilent)
                 {
                     renderer.sharedMaterial = smileSilent;
                     currentMouth = smileSilent;
                 }
-                else if (clipLoudness > 1 && currentMouth != smileSpeaking)
+                else if (clipLoudness > speakingFrequencyAdjuster && currentMouth != smileSpeaking)
                 {
                     renderer.sharedMaterial = smileSpeaking;
                     currentMouth = smileSpeaking;
